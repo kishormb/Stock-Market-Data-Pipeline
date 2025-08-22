@@ -1,0 +1,16 @@
+# Core dependencies
+requests==2.31.0
+psycopg2-binary==2.9.7
+pandas==2.0.3
+sqlalchemy==1.4.53
+
+# Data validation and processing
+pydantic==2.4.2
+tenacity==8.2.3
+
+# Monitoring and logging
+structlog==23.1.0
+
+# Additional utilities
+python-dateutil==2.8.2
+pytz==2023.3

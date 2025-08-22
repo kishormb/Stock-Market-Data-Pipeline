@@ -1,0 +1,1 @@
+[2025-08-22T15:30:59.660+0000] {scheduler_job_runner.py:769} ERROR - Executor reports task instance <TaskInstance: stock_market_db_test.test_db_connection manual__2025-08-22T15:29:05.762984+00:00 [queued]> finished (failed) although the task says it's queued. (Info: None) Was the task killed externally?

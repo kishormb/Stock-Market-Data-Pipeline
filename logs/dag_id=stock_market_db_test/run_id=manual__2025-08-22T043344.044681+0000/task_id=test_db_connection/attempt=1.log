@@ -1,0 +1,15 @@
+[2025-08-22T04:33:53.385+0000] {local_task_job_runner.py:120} INFO - ::group::Pre task execution logs
+[2025-08-22T04:33:53.449+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: stock_market_db_test.test_db_connection manual__2025-08-22T04:33:44.044681+00:00 [queued]>
+[2025-08-22T04:33:53.466+0000] {taskinstance.py:2073} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: stock_market_db_test.test_db_connection manual__2025-08-22T04:33:44.044681+00:00 [queued]>
+[2025-08-22T04:33:53.468+0000] {taskinstance.py:2303} INFO - Starting attempt 1 of 2
+[2025-08-22T04:33:53.505+0000] {taskinstance.py:2327} INFO - Executing <Task(PythonOperator): test_db_connection> on 2025-08-22 04:33:44.044681+00:00
+[2025-08-22T04:33:53.522+0000] {standard_task_runner.py:63} INFO - Started process 574 to run task
+[2025-08-22T04:33:53.536+0000] {standard_task_runner.py:90} INFO - Running: ['airflow', 'tasks', 'run', 'stock_market_db_test', 'test_db_connection', 'manual__2025-08-22T04:33:44.044681+00:00', '--job-id', '6', '--raw', '--subdir', 'DAGS_FOLDER/stock_market_dag.py', '--cfg-path', '/tmp/tmplfv_wlrx']
+[2025-08-22T04:33:53.541+0000] {standard_task_runner.py:91} INFO - Job 6: Subtask test_db_connection
+[2025-08-22T04:33:55.521+0000] {task_command.py:426} INFO - Running <TaskInstance: stock_market_db_test.test_db_connection manual__2025-08-22T04:33:44.044681+00:00 [running]> on host c8aa366a6fee
+[2025-08-22T04:34:05.566+0000] {standard_task_runner.py:110} ERROR - Failed to execute job 6 for task test_db_connection ((psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8); 574)
+[2025-08-22T04:34:06.154+0000] {local_task_job_runner.py:240} INFO - Task exited with return code 1
+[2025-08-22T04:34:06.192+0000] {taskinstance.py:3482} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2025-08-22T04:34:06.198+0000] {local_task_job_runner.py:222} INFO - ::endgroup::
